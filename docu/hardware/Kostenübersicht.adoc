@@ -1,0 +1,23 @@
+_Hier stehen die Kostenübersicht._
+
+[cols="1,1,1,1" options="header"]
+|===
+|Produkt |Beschreibung |Einkaufsort |Kosten in CHF
+|Puppenhaus |FLISAT Puppenhaus |Ikea |19.95
+|Holz |Sperrholz Pappel 8 mm dick |DO IT + GARDEN Migros |30.05
+|Hobbyglas |Hobbyglas Transparent, 100 × 50 cm, 2 mm |Jumbo |11.95
+|Kistengriffe |2 Stk. Kistengriff Verzinkt Buntchrom, 100 × 80 × 15 mm |Jumbo |9.60
+|Scharniere |2 Stk. Ayce Scharnier Kantig Gelb Verzinkt, 50 × 50 mm |Jumbo |5.40
+|Universalschrauben | Universalschraube, 3 × 20 mm |Migros |5.75
+|Schrauben | Schrauben M 3 x 16 mm | Migros |1.95
+|Schrauben | Schrauben M 4 x 16 mm | Migros |2.25
+|Schrauben | Linsenschrauben M 4 x 16 mm | Migros |2.25
+|Drucktaster | 20 Stk. Miniatur-Drucktaster | Reichelt | 12.61
+|Wiederstand | 30 Stk. Wiederstand, Kohleschicht, 75 Ohm | Reichelt | 0.80
+|LED | 20 Stk. LED, 5 mm, bedrahtet, grün, 39000 mcd, 15°| Reichelt | 4.33
+|Steckbrückenkabel | 3 x 20 Stk., Stekcbrückenkabel, 50 cm | Reichelt | 19.19
+|Bausatz i2C-Output | Bausatz i2C-Output | Horter & Kalb | 20.90
+|Raspberry Pi 4 | Raspberry Pi 4 Model B 4 GB | Ali Cengiz | 53.30
+
+|*Total* | | | *200.00*
+|===

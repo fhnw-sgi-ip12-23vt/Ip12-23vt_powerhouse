@@ -1,0 +1,228 @@
+= Bedienungsanleitung für die Spielsoftware
+
+== Software (Spiel)
+
+=== Spielübersicht
+
+*Ziel des Spiels*
+
+Unser Produkt ist ein physisches Spiel, welches auf spielerische Art Jugendlichen aufzeigt. Wie der Umgang mit Energiesparen effizient gestaltet werden kann.
+Das Spiel findet in einem physischen Puppenhaus statt und handelt um das Energiemonster Elektronix,
+welches traurig ist, da dieser keine Energie mehr hat. Der spielenden Person werden verschiedene Aufgaben gestellt,
+indem im Haus Alltagsgegenstände ein- oder ausgeschaltet werden müssen. Diese Gegenstände sind jeweils mit LEDs
+versehen und werden mithilfe eines Druckknopfes eingeschaltet. Das Ziel ist es, Energie im Haus zu sparen, indem je nach
+der Situation, dass Gegenstände ein- und ausgeschaltet werden und Elektronix sich mit dieser Energie aufladen kann und somit zufrieden ist.
+
+
+*Hauptfeatures*
+
+[cols="1,2,6", options="header"]
+|===
+| ID
+| Name
+| Kurzbeschreibung
+
+| F01
+| Spielführung (Gameplay)
+| Spieler*innen interagieren mit dem Puppenhaus, steuern verschiedene Alltagsgegenstände und erleben ein unterhaltsames sowie lehrreiches Gameplay. Die Spielführung leitet die Nutzer durch Szenarien, in denen sie ihre Entscheidungen bezüglich des Energieverbrauchs treffen.
+
+| F02
+| Interaktion UI-Spielmenü (Druckknöpfe, Display)
+| Das Display des Spielmenüs bietet eine benutzerfreundliche Oberfläche, über die Spieler*innen das Spiel starten und Informationen über ihre Fortschritte erhalten können. Die intuitive Navigation ermöglicht eine reibungslose Interaktion.
+
+| F03
+| Energieverbrauchssimulation von Alltagsgegenständen
+| Spieler*innen erleben eine realistische Simulation, bei der sie den Energieverbrauch von Alltagsgegenständen im Puppenhaus steuern. Die Interaktion vermittelt ein Verständnis für die Auswirkungen von Entscheidungen auf den Energieverbrauch.
+
+| F04
+| Portability und Usability
+| Das Spiel oder Exponat soll leicht transportierbar sein. Die schnelle Auf- und Abbauzeit gewährleistet eine effiziente Nutzung, während die Sicherheit und einfache Handhabung für den Betreiber ein essentielles Bedürfnis ist. Die Selbsterklärung des Spieles und eine schnelle Antwortzeit sind entscheidend, um das Interesse der Schüler*innen im primären Zielpublikum (7. - 9. Schuljahr) zu erhalten.
+
+| F05
+| Szenarien mit Entscheidungsmöglichkeiten
+| Spieler*innen interagieren mit realistischen Alltagsszenarien im Puppenhaus, treffen Entscheidungen zur Energieeffizienz und erleben unmittelbare Auswirkungen auf den Spielfortschritt. Diese Szenarien fördern ein spielerisches Verständnis für nachhaltige Entscheidungsprozesse.
+
+| F06
+| Anzeige von Statistiken und Feedback
+| Spieler*innen erhalten Statistik über ihren Energieverbrauch und Feedback zu ihren Entscheidungen. Dies ermöglicht eine selbstreflektierte Analyse und fördert das Verständnis für energieeffizientes Verhalten.
+
+|===
+
+'''
+
+=== Neuinstallation
+
+*Vorbereitung:*
+Vor der Neuinstallation sollten alle wichtigen Daten gesichert werden. Es ist empfehlenswert, dass die aktuelle Version des Spiels deinstalliert wird, um mögliche Konflikte mit der neuen Installation zu vermeiden.
+
+*Set-up:* Damit Sie mit der Codebase von Powerhouse arbeiten können, gibt es Folgendes zu beachten:
+
+==== Codebase
+**maven**
+Das Projekt wird mit Maven-Build-Automation verwaltet. Dafür finden Sie im root-Verzeichnis das Project-Object-Model file (das "POM.xml") mit allen notwendigen Konfigurationen. Informationen zu verwendeten Versionen können ebenfalls diesem POM entnommen werden.
+Im POM sind auch die Runtime Konfigurationen, zur Erstinstallation, um das Projekt auf das Raspberry Pi zu deployen, und weitere Konfigurationen zum Testen und Debuggen auf dem Raspberry Pi.
+
+==== Einrichten des Projekts
+1. Damit diese Runtime-Konfigurationen und alle Dependencies in der richtigen Version vorhanden sind, muss die "POM.xml"-Datei als Maven Projekt hinzugefügt werden.
+
+2. Die Run-Konfiguration "Install Pi4j-library" muss ausgeführt werden. Diese wird benötigt, da im Projekt eine library verwendet wird, welche nicht im Maven Central Repository zum Download vorhanden ist. Die Library ist Teil des Projekts und wird mit der Run-Konfiguration lokal installiert.
+
+
+==== Setup Raspberry Pi 4
+
+**Raspberry Pi OS Installation**
+Zur Neuinstallation eines Raspberry Pis muss zuerst das richtige OS installiert werden. Folgen Sie dazu dem https://www.pi4j.com/getting-started/set-up-a-new-raspberry-pi/[Pi4J Setup Guide].
+
+
+**Remote-Verbindung zum Raspberry Pi**
+Nach der OS Installation muss eine Maus, Tastatur und ein Monitor am RasPi angeschlossen werden. Für die Verbindung mit Ihrem Computer befolgen Sie folgende Schritte:
+
+RasPi mit Strom versorgen. Der RasPi startet automatisch und bootet in das OS.
+
+RaspberryPi mit einem Netzwerk verbinden. (Netzwerkassistent des OS nutzen)
+
+Nach dem erfolgreichen Verbinden mit einem Netzwerk wird die IP-Adresse im Desktop-Hintergrundbild angezeigt.
+
+Nun kann mit der Run Konfiguration "Run on PI(X11)" welche von Maven importiert wird, wenn das POM als Maven Projekt geladen wird, ausgeführt werden.
+
+falls die Verbindung fehlschlägt, überprüfen Sie, ob sich der PC im gleichen LAN wie der Raspberry Pi befindet.
+
+Zur Problemlösung und weiteren Informationen verweisen wir auf:
+
+https://www.pi4j.com/[Pi4J Projekt - Homepage]
+
+https://www.raspberrypi.com/documentation/[Raspberry Pi - Dokumentation]
+
+===== Run on Pi (X11)
+Mit dem Ausführen der "Run on Pi(X11)"-Run Konfiguration werden alle für die Applikation benötigten Artifakte auf das RasPi in den "/home/pi/deploy"-Ordner kopiert. Zudem werden Skripts für die Installation des Autostarts der Applikation in diesen Ordner kopiert. All diese Artifakte sind in der "POM.xml"-Datei deklariert.
+
+
+===== Einrichten des Raspberry Pi
+Für das Einrichten des Raspberry Pi’s werden mehrere Skripts benötigt. Diese werden bei jedem Deployment auf den Raspberry Pi kopiert. Diese Skripts sind unter anderem dazu da, die Monitor Einstellungen zu übernehmen und den Autostart des Spiels einzurichten.
+
+
+Dazu existiert eine Run-Konfiguration "Installscript on Pi" welche die Scripts auf dem Raspberry Pi ausführen und alles einrichten.
+
+'''
+=== Spielsteuerung
+* Steuerungselemente
+* Anpassung der Steuerungseinstellungen
+
+Dieser Abschnitt erläutert die Interaktionsmechanismen und Konfigurationsmöglichkeiten der Spielsteuerung, die darauf ausgelegt sind, eine intuitive und anpassbare Benutzererfahrung zu ermöglichen.
+
+*1. Steuerungselemente:*
+
+Das zentrale Interface für die Spielinteraktion befindet sich auf einem Schaltpult, das alle notwendigen Steuerungselemente umfasst:
+
+*Druckknöpfe:*
+Über diese Knöpfe steuern die Spieler*innen die Ein- und Ausschaltung von Genständen im Puppenhaus, was direkte Auswirkungen auf den Energieverbrauch hat.
+
+*Display:*
+Das Display am Schaltpult ist zentral für die Interaktion der Spieler mit dem Spiel. Es bietet  Informationen und visuelles Feedback zu den Spielaktionen und -ergebnissen:
+
+* Das Display zeigt Fragen zum Energiesparen und gibt Tipps. Diese können darauf hinweisen, ob eine Aktion richtig oder falsch war, um den Spielern zu helfen, energieeffizientere Entscheidungen zu treffen.
+
+* Die Anzahl der Punkte, die die Spieler basierend auf ihren Aktionen und Entscheidungen im Spiel sammeln, werden deutlich mit einem Barometer dargestellt.
+
+* Die Stimmung des Elektronix, der je nach den Aktionen der Spieler glücklich oder traurig sein kann, wird visuell auf dem Display angezeigt.
+
+*2. Anpassung der Steuerungseinstellungen:*
+
+Dieser Abschnitt erläutert, wie die Steuerungselemente im Code angepasst werden können, falls Anpassungen nötig sind. Das bezieht sich auf die Funktionalitäten der Druckknöpfe und das Display, welche zentral für die Interaktion im Spiel sind.
+
+*Anpassung der Druckknöpfe:* Die Druckknöpfe werden durch die Klasse *SimpleButton* im Paket (com.pi4j.mvc.powerhouse.components) gesteuert. Diese Klasse ist für die Behandlung der Eingaben von Druckknöpfen zuständig und bietet Methoden, um auf verschiedene Zustände der Druckknöpfe zu reagieren. Jede Methode enthält kurze Kommentare, die deren Zweck beschreiben.
+
+*Anpassung des Displays:* Im Projektverzeichnis wird der Ordner *view* gefunden, der in *gui* und *pui* unterteilt ist und beim *resources* wird den *questions.json* gefunden. Diese Bereiche sind für die Steuerung der Logik und des Layouts der Benutzeroberfläche zuständig.
+
+*ioAll.csv:* Dieses CSV befindet sich im Paket (com.pi4j.mvc.powerhouse.components). Hier können die LEDs und Druckknöpfe einander zugeorndet werden. "E + Zahl" sind für die LEDs und "D + Zahl" sind für die Buttons.
+
+[cols="1,2,6" , options="header"]
+|===
+|gui
+|pui
+|questions.json
+|Im gui befinden sich mehrere Schlüsselklassen, die für die Darstellung und das Management der verschiedenen Spielszenen und Elemente verantwortlich sind. Jede dieser Klassen spielt eine spezifische Rolle im Kontext der Benutzeroberfläche des Spiels.
+|Die *SimulationObjectPUI* Klasse, die sich im pui-Paket befindet, verwaltet die physische Benutzerinteraktion durch LEDs und Buttons, die den SimulationObjects zugeordnet sind.
+|Diese JSON-Datei enthält die Definitionen der Fragen und ist zentral für die Anpassung der Spielinhalte. Durch Änderungen an dieser Datei können die Fragen und Antworten, die im Spiel verwendet werden, modifiziert oder erweitert werden.
+|===
+
+==== questions.jason
+In diesem Jason-File können Fragen angepasst und neue hinzugefügt werden. Jede Frage benötigt Folgendes:
+
+* *Difficulty:* Hier wird der Schwierigkeitsgrad einer Frage bestummen. Es gibt:
+   - Einstiegslevel: Hier können keine Punkte gewonnen oder verloren werden.
+   - Easy: 10 Punkte gewinnen oder 5 Punkte verlieren
+   - Medium: 20 Punkte gewinnen oder 10 Punkte verlieren
+   - Hard: 30 Punkte gewinnen oder 15 Punkte verlieren
+
+
+Die Difficulty kann im Enum "Difficulty" im Paket "Game"  angepasst werden.
+
+* *Question:* Hier wird die Aufgabe gestellt.
+* *ActiveAtStart:* Hier werden die Gegenstände aufgelistet, die zu Beginn des Levels an sein sollten.
+* *Answer:* In Answer wird festgelegt, welche Gegenstände nach der gelösten Aufgabe noch an sein sollten.
+* *WinMessage:* In der WinMessage wird die Nachricht eingefügt, wenn die Aufgabe richtig gelöst wurde.
+* *FailMessage:* In der FailMessage wird die Nachricht eingefügt, wenn die Aufgabe richtig gelöst wurde.
+* *ImagePath:* Hier wird der Path zum Bild von Elektronix eingefügt werden.
+* *ImagePathWeather:* Hier wird der Path zum Bild vom Wetter eingefügt.
+
+'''
+=== Wartung
+Die regelmässige Wartung der Software des Puppenhausspiels ist entscheidend, um Stabilität, Sicherheit und optimale Leistung zu gewährleisten. Folgende Punkte sind dabei besonders wichtig:
+
+*Aktualisierung der Software:* Für die Aktualisierung der Software muss man den Maven-Build ausführen.
+
+*Löschen der alten Installation:* Möchte die alte Installation gelöscht werden, muss der Deply-Folder gelöscht werden.
+
+'''
+
+=== Werkzeuge
+* Werkzeuge die gebraucht werden, wenn am Haus was angepasst wird.
+
+Für die Installation, Wartung und Anpassung der Spielsoftware sind verschiedene Werkzeuge erforderlich, die sowohl die Softwareprogrammierung als auch die Hardwarekonfiguration umfassen. Folgende Werkzeuge werden verwendet:
+
+*Software-Entwicklungswerkzeuge:*
+
+[cols="1,2,6"]
+|===
+| Programmiersprache:
+| Java
+| Verwendung für die Kernentwicklung der Spiellogik und Interaktionen.
+
+| Frontend Stack:
+| JavaFX und CSS
+| • JavaFX wird verwendet, um eine benutzerfreundliche Oberfläche zu gestalten, die auf einem Raspberry Pi funktioniert.
+
+• CSS wird zur Gestaltung der Benutzeroberfläche genutzt, um das Spiel visuell ansprechend zu machen.
+|===
+
+*Hardware-Entwicklungswerkzeuge:*
+
+[cols="1,2,6"]
+|===
+|Backend Stack:
+|Pi4J
+|Pi4J ermöglicht die Interaktion zwischen der Java Anwendung und der GPIO-Schnittstelle des Raspberry Pi. Dies wird genutzt, um Sensoren und Aktoren im Puppenhaus zu steuern.
+
+|Plattform für die Implementierung:
+|Raspberry Pi
+|Dient als zentrale Steuereinheit für das Puppenhaus, auf der die Spielsoftware läuft und die Hardwarekomponenten gesteuert werden.
+|===
+
+*Hinweise zur Verwendung der Werkzeuge:*
+Es ist wichtig, dass Entwickler und Techniker, die mit diesen Werkzeugen arbeiten, entsprechende Kenntnisse in der Java-Programmierung und Erfahrung im Umgang mit Raspberry Pi haben.
+
+'''
+
+=== Fehlerbehebung
+*Shellskript funktioniert nicht Ordnungsgemäss?*
+
+Eine häufige Fehlerquelle im Zusammenhang mit Shellskripten ist, dass die Linebreaks im Shellskript falsch formatiert sind. Dies kann auftreten, wenn die Shellskripts in einer IDE über einen Windowscomputer deployed wurden.
+→ Stellen Sie sicher, dass die Linebreaks in der IDE auf 'LF', also für Unix und MacOS eingestellt sind. (LF Linebreaks: "\n")
+Hardware
+
+*Wechseln von Hardware Komponenten*
+
+* Button: Die Buttons sind mit dem Brett verschraubt. Zuerst muss die Buttonkappe entfernt werden. Diese ist mit einem Doppelseitigenklebeband befestigt. Anschliessend kann die Mutter um den Knopf gelöst werden und nach hinten herausgedrückt werden.
+* LEDs: Falls eine LED gewechselt werden muss. Die Plexiglasscheibe kan vom Haus ganz einfach entfernt werden, da diese nur mit zwei Klettverschlüssen und Magneten befestigt ist. Die LEDs sind mit Heissleim befestigt. Der Leim muss zuerst erhitzt werden und kann anschliessend weggenommen werden.
+* Möbel: Möchte man ein Möbel ersetzen, kann die Plexiglasscheibe vom Haus entfernt werden. Die Möbel sind alle ebenfalls mit Heisleim befestigt. Auch hier muss der Leim zuerst erhizt werden, damit die Möbel entfert werden können.
