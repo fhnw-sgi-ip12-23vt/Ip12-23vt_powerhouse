@@ -55,19 +55,6 @@ der Situation, dass Gegenstände ein- und ausgeschaltet werden und Elektronix si
 *Vorbereitung:*
 Vor der Neuinstallation sollten alle wichtigen Daten gesichert werden. Es ist empfehlenswert, dass die aktuelle Version des Spiels deinstalliert wird, um mögliche Konflikte mit der neuen Installation zu vermeiden.
 
-*Set-up:* Damit Sie mit der Codebase von Powerhouse arbeiten können, gibt es Folgendes zu beachten:
-
-==== Codebase
-**maven**
-Das Projekt wird mit Maven-Build-Automation verwaltet. Dafür finden Sie im root-Verzeichnis das Project-Object-Model file (das "POM.xml") mit allen notwendigen Konfigurationen. Informationen zu verwendeten Versionen können ebenfalls diesem POM entnommen werden.
-Im POM sind auch die Runtime Konfigurationen, zur Erstinstallation, um das Projekt auf das Raspberry Pi zu deployen, und weitere Konfigurationen zum Testen und Debuggen auf dem Raspberry Pi.
-
-==== Einrichten des Projekts
-1. Damit diese Runtime-Konfigurationen und alle Dependencies in der richtigen Version vorhanden sind, muss die "POM.xml"-Datei als Maven Projekt hinzugefügt werden.
-
-2. Die Run-Konfiguration "Install Pi4j-library" muss ausgeführt werden. Diese wird benötigt, da im Projekt eine library verwendet wird, welche nicht im Maven Central Repository zum Download vorhanden ist. Die Library ist Teil des Projekts und wird mit der Run-Konfiguration lokal installiert.
-
-
 ==== Setup Raspberry Pi 4
 
 **Raspberry Pi OS Installation**
