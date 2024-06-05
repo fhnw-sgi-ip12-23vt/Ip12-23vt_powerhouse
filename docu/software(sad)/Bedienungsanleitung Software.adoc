@@ -134,20 +134,31 @@ Dieser Abschnitt erläutert, wie die Steuerungselemente im Code angepasst werden
 
 *Anpassung des Displays:* Im Projektverzeichnis wird der Ordner *view* gefunden, der in *gui* und *pui* unterteilt ist und beim *resources* wird den *questions.json* gefunden. Diese Bereiche sind für die Steuerung der Logik und des Layouts der Benutzeroberfläche zuständig.
 
-*ioAll.csv:* Dieses CSV befindet sich im Paket (com.pi4j.mvc.powerhouse.components). Hier können die LEDs und Druckknöpfe einander zugeorndet werden. "E + Zahl" sind für die LEDs und "D + Zahl" sind für die Buttons.
+*ioAll.csv:* Dieses CSV befindet sich im Paket (com.pi4j.mvc.powerhouse.components). Hier können die LEDs und Druckknöpfe einander zugeordnet werden. "E + Zahl" sind für die LEDs und "D + Zahl" sind für die Buttons. Die folgende Tabelle kennzeichnet jedem Simulationsgegenstand im Puppenhaus eine PIN-Nummer (Ex oder Dx), welches dem Gegenstand jeweils ein Button und eine LED zuweist. Auf Grund den technischen Gegebenheiten des Raspberry Pi 4 bezüglich GPIO-Pins, ist das Spiel auf zwei zusätzliche I2C Output Extension-Boards angewiesen, dass die entsprechenden LEDs separat anschließt und ansteuert. *Simulations-Gegenstände müssen exakt mit der Bezeichnung im 'questions.json' (Attribute: "activeAtStart" & "Answer") übereinstimmen.*
 
-[cols="1,2,6" , options="header"]
+[cols="2,2,2,1,1" , options="header"]
 |===
-|gui
-|pui
-|questions.json
-|Im gui befinden sich mehrere Schlüsselklassen, die für die Darstellung und das Management der verschiedenen Spielszenen und Elemente verantwortlich sind. Jede dieser Klassen spielt eine spezifische Rolle im Kontext der Benutzeroberfläche des Spiels.
-|Die *SimulationObjectPUI* Klasse, die sich im pui-Paket befindet, verwaltet die physische Benutzerinteraktion durch LEDs und Buttons, die den SimulationObjects zugeordnet sind.
-|Diese JSON-Datei enthält die Definitionen der Fragen und ist zentral für die Anpassung der Spielinhalte. Durch Änderungen an dieser Datei können die Fragen und Antworten, die im Spiel verwendet werden, modifiziert oder erweitert werden.
+|Raum im Puppenhaus
+|Simulations-Gegenstand
+|Device-Adresse des I2C Extension-Board
+|LED-PIN
+|Button-PIN
+.4+|Schlafzimmer| LampeSchlafzimmer      | 32  | E1  | D4
+                | NachttischLampe        | 32  | E3  | D6
+                | Heizung                | 32  | E4  | D11
+                | Computer               | 32  | E6  | D5
+.2+|Badezimmer  | LampeBadezimmer        | 32  | E5  | D16
+                | Waschmaschine/Tumbler  | 32  | E2  | D17
+.3+|Wohnzimmer  | LampeWohnzimmer        | 34  | E6  | D20
+                | Fernseher/Spielkonsole | 34  | E3  | D25
+                | Aquarium               | 34  | E4  | D23
+.3+|Küche       | LampeKueche            | 34  | E1  | D22
+                | Herd/Backofen          | 34  | E2  | D21
+                | Kuehlschrank           | 34  | E5  | D24
 |===
 
 ==== questions.jason
-In diesem Jason-File können Fragen angepasst und neue hinzugefügt werden. Jede Frage benötigt Folgendes:
+Diese JSON-Datei enthält die Definitionen der Fragen und ist zentral für die Anpassung der Spielinhalte. Durch Änderungen an dieser Datei können die Fragen und Antworten, die im Spiel verwendet werden, modifiziert oder erweitert werden. Jede Frage benötigt Folgendes:
 
 * *Difficulty:* Hier wird der Schwierigkeitsgrad einer Frage bestummen. Es gibt:
    - Einstiegslevel: Hier können keine Punkte gewonnen oder verloren werden.
@@ -159,7 +170,7 @@ In diesem Jason-File können Fragen angepasst und neue hinzugefügt werden. Jede
 Die Difficulty kann im Enum "Difficulty" im Paket "Game"  angepasst werden.
 
 * *Question:* Hier wird die Aufgabe gestellt.
-* *ActiveAtStart:* Hier werden die Gegenstände aufgelistet, die zu Beginn des Levels an sein sollten.
+* *ActiveAtStart:* Hier werden die Gegenstände aufgelistet, die zu Beginn des Levels an sein sollten. (Gegenstände müssen exakt mit der Bezeichnung im 'ioAll.csv' übereinstimmen.)
 * *Answer:* In Answer wird festgelegt, welche Gegenstände nach der gelösten Aufgabe noch an sein sollten.
 * *WinMessage:* In der WinMessage wird die Nachricht eingefügt, wenn die Aufgabe richtig gelöst wurde.
 * *FailMessage:* In der FailMessage wird die Nachricht eingefügt, wenn die Aufgabe richtig gelöst wurde.
