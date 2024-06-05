@@ -5,7 +5,7 @@
 ***
 In diesem Readme werden auf alle wichtigen Elemente verwiesen.
 
-## Überblock über das Projekt Powerhouse
+## Überblick über das Projekt Powerhouse
 ***
 Alle wichtigen Elemente der Software-Architektur, sowie alle Informationen zu verwendeter Hardware finden Sie in der Dokumentation. Diese ist folgendermassen aufgeteilt:
 
