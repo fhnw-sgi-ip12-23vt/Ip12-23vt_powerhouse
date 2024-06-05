@@ -15,7 +15,7 @@ Alle wichtigen Elemente der Software-Architektur, sowie alle Informationen zu ve
 
 * [Softwaredokumentation (SAD)](https://github.com/fhnw-sgi-ip12-23vt/Ip12-23vt_powerhouse/blob/c4615cf55405ba9b3537b55cfcc192cdb2d660c0/docu/software(sad)/arc42-template.adoc)
 
-* [Bedieungsanleitung Software](https://github.com/fhnw-sgi-ip12-23vt/Ip12-23vt_powerhouse/blob/d943952f26c9792b2c2e0c8939f13d876f54f816/docu/software(sad)/Bedienungsanleitung%20Software.adoc
+* [Bedieungsanleitung Software](https://github.com/fhnw-sgi-ip12-23vt/Ip12-23vt_powerhouse/blob/d943952f26c9792b2c2e0c8939f13d876f54f816/docu/software(sad)/Bedienungsanleitung%20Software.adoc)
 
 (überall Link einfügen)
 
