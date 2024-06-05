@@ -57,7 +57,8 @@ Im besten Fall kommen Sie mit Beispielen oder einfachen Signaturen zurecht.
 
 _**<Übersichtsdiagramm>**_
 
-image::Ebene1.drawio.png["Bild: Ebene 1 von Powerhouse"]
+
+image::05_building_blocks.png["Bild: Bausteinansicht Powerhouse"]
 
 Begründung::
 Die Zerlegung erfolgt nach dem Model-View-Controller Muster. Dieses Muster erlaubt uns eine unabhängige Entwicklung und eine übersichtliche Architektur.

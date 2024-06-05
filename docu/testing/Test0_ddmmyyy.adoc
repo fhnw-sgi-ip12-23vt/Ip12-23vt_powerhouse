@@ -1,13 +1,103 @@
-== Test 0
+//== Test 0
 
-[%autowidth]
+//[%autowidth]
+//|===
+//|Datum | dd.mm.yyy
+//|Verantwortlich | Max Muster
+//|===
+
+//include::TestCases/1_1_EinAusschalten.adoc[]
+
+//*Status:* Erfolgreich
+
+//*Bemerkungen:* Der Knopf lies sich nur schwer drücken.
+
+== Test1:
 |===
 |Datum | dd.mm.yyy
-|Verantwortlich | Max Muster
+|Verantwortlich | David - Ali
+|Test ID |
+|Testtitel|
+|Beschreibung|
+|Annahmen und Voraussetzungen|
+|Testdaten|
+|Auszuführende Schritte|
+|Erwartetes Ergebnis|
+|Status|
+|Bemerkungen|
 |===
 
-include::TestCases/1_1_EinAusschalten.adoc[]
+== Test2:
+|===
+|Datum | dd.mm.yyy
+|Verantwortlich | David - Ali
+|Test ID |
+|Testtitel|
+|Beschreibung|
+|Annahmen und Voraussetzungen|
+|Testdaten|
+|Auszuführende Schritte|
+|Erwartetes Ergebnis|
+|Status|
+|Bemerkungen|
+|===
 
-*Status:* Erfolgreich
+== Test3:
+|===
+|Datum | dd.mm.yyy
+|Verantwortlich | David - Ali
+|Test ID |
+|Testtitel|
+|Beschreibung|
+|Annahmen und Voraussetzungen|
+|Testdaten|
+|Auszuführende Schritte|
+|Erwartetes Ergebnis|
+|Status|
+|Bemerkungen|
+|===
 
-*Bemerkungen:* Der Knopf lies sich nur schwer drücken.
+== Test4:
+|===
+|Datum | dd.mm.yyy
+|Verantwortlich | David - Ali
+|Test ID |
+|Testtitel|
+|Beschreibung|
+|Annahmen und Voraussetzungen|
+|Testdaten|
+|Auszuführende Schritte|
+|Erwartetes Ergebnis|
+|Status|
+|Bemerkungen|
+|===
+
+== Test5:
+|===
+|Datum | dd.mm.yyy
+|Verantwortlich | David - Ali
+|Test ID |
+|Testtitel|
+|Beschreibung|
+|Annahmen und Voraussetzungen|
+|Testdaten|
+|Auszuführende Schritte|
+|Erwartetes Ergebnis|
+|Status|
+|Bemerkungen|
+|===
+
+== Test6:
+|===
+|Datum | dd.mm.yyy
+|Verantwortlich | David - Ali
+|Test ID |
+|Testtitel|
+|Beschreibung|
+|Annahmen und Voraussetzungen|
+|Testdaten|
+|Auszuführende Schritte|
+|Erwartetes Ergebnis|
+|Status|
+|Bemerkungen|
+|===
