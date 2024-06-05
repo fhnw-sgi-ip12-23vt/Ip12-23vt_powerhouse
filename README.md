@@ -21,8 +21,12 @@ Alle wichtigen Elemente der Software-Architektur, sowie alle Informationen zu ve
 
 In der **Hardwaredokumentation** sind alle Produkte aufgelistet, die für den Bau des Produktes nötig sind.
 
-1. Teileliste mit allen Teilen und den Abmessungen
-2. 3D-Druck-Dateien mit einer Auflistung der Abmessungen
+1. [Teileliste]() mit allen Teilen und den Abmessungen
+2. [3D-Druck-Dateien]() mit einer Auflistung der Abmessungen 
+3. [Kostenübersicht]()
+
+#### Datenblätter
+Die Datenblätter sind [hier]() zu finden.
 
 ## Programmierkonventionen (Coding-Conventions)
 ***
