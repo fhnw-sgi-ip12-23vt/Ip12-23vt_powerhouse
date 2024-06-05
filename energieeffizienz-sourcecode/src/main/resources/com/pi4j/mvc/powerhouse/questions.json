@@ -1,0 +1,199 @@
+{
+  "question 0": {
+    "difficulty": "EINSTIEGSLEVEL",
+    "question": "Als Einstieg, kannst du alle Lichter einschalten.",
+    "activeAtStart": [
+    ],
+    "answer": [
+      "LampeSchlafzimmer",
+      "LampeBadezimmer",
+      "NachttischLampe",
+      "LampeKueche",
+      "LampeWohnzimmer"
+    ],
+    "winMessage": "Richtig! Du siehst nun, dass alle Lichter im Haus eingeschaltet sind. Jetzt kannst du mit den richtigen Levels beginnen.",
+    "failMessage": "Du hast nicht alle Lichter eingeschaltet.",
+    "imagePath": "img/Elektronix/Einstiegslevel.png",
+    "imagePathWeather": "img/Sommer_Nacht.png"
+  },
+  "question 1": {
+    "difficulty": "EASY",
+    "question": "Du bist in der Küche und hast Elektronix ein Getränk zubereitet, welches ihr zusammen trinkt. Was kannst du alles ausschalten?",
+    "activeAtStart": [
+      "Aquarium",
+      "Kuehlschrank",
+      "LampeKueche",
+      "NachttischLampe",
+      "LampeBadezimmer"
+    ],
+    "answer": [
+      "Aquarium",
+      "Kuehlschrank"
+    ],
+    "winMessage": "Richtig! Den Kühlschrank solltest du nicht ausschalten, sonst verderben deine Lebensmittel. \nLampen benötigen zwar nicht viel Energie, jedoch kannst du 17 Tage im Monat dein Smartphone länger laden.",
+    "failMessage": "Das Aquarium und den Kühlschrank darfst du fast nie ausschalten. Die Lampen kannst du am Tag jedoch ausschalten. \nLampen benötigen zwar nicht viel Energie, jedoch kannst du 17 Tage im Monat dein Smartphone länger laden.",
+    "imagePath": "img/Elektronix/Level_1.png",
+    "imagePathWeather": "img/Sommer_Tag.png"
+  },
+  "question 2": {
+    "difficulty": "EASY",
+    "question": "Jetzt ist es Zeit für eine Runde Videospiele. Elektronix und du wollt eine Runde auf der Spielkonsole im Wohnzimmer spielen. Schalte alle Geräte ein, die ihr benötigt.",
+    "activeAtStart": [
+      "Aquarium",
+      "Kuehlschrank"
+    ],
+    "answer": [
+      "Aquarium",
+      "Kuehlschrank",
+      "Fernseher/Spielkonsole"
+    ],
+    "winMessage": "Genau für eure Gamingrunde benötigt ihr am Tag nur den Fernseher. Das Aquarium darf nicht ausgeschalten werden, weil der Filter den Sauerstoffanteil für Bakterien verringert und die Fische so vergiftet werden können",
+    "failMessage": "Damit ihr spielen könnt, musst du den Fernseher einschalten.\nWenn du das Aquarium ausschaltest, läuft der Filter nicht mehr und der Sauerstoffanteil für Bakterien wird nicht verringert und die Fische können so vergiftet werden. ",
+    "imagePath": "img/Elektronix/Level_2.png",
+    "imagePathWeather": "img/Sommer_Tag.png"
+
+  },
+  "question 3": {
+    "difficulty": "EASY",
+    "question": "Da es warm ist, möchtet ihr im Garten campen und geht aus dem Haus. Bereite das Haus für eine möglichst energieeffiziente Nacht vor.",
+    "activeAtStart": [
+      "Aquarium",
+      "Kuehlschrank",
+      "Computer",
+      "Fernseher/Spielkonsole",
+      "LampeWohnzimmer",
+      "LampeSchlafzimmer",
+      "NachttischLampe"
+    ],
+    "answer": [
+      "Aquarium",
+      "Kuehlschrank"
+    ],
+    "winMessage": "Richtig! Für eure Campingnacht könnt ihr so gut wie alles im Haus ausschalten.\n Wenn du so viel Energie in der Woche sparst, kannst du 5 Tage im Monat länger auf der Spielkonsole spielen.",
+    "failMessage": "Da ihr nicht im Haus seid, kannst du alles ausschalten, ausser den Kühlschrank und das Aquarium. Wenn du so viel Energie in der Woche sparst, kannst du 5 Tage im Monat länger auf der Spielkonsole spielen.",
+    "imagePath": "img/Elektronix/Level_3.png",
+    "imagePathWeather": "img/Sommer_Nacht.png"
+  },
+  "question 4": {
+    "difficulty": "MEDIUM",
+    "question": "Zum Frühstück möchtet ihr euch ein Brot backen. Wie kannst du dies möglichst Energieeffizient zubereiten?",
+    "activeAtStart": [
+      "Aquarium",
+      "Kuehlschrank",
+      "LampeSchlafzimmer",
+      "Heizung",
+      "NachttischLampe",
+      "LampeBadezimmer"
+    ],
+    "answer": [
+      "Aquarium",
+      "Kuehlschrank",
+      "Heizung",
+      "Herd/Backofen"
+    ],
+    "winMessage": "Richtig! Da du dich bereits für den Tag bereit gemacht hast, kannst du alles im Obergeschoss ausschalten. \nWenn du die Lampen einen Monat lang nicht brauchst, kannst du 1 Tag länger Fernsehen.",
+    "failMessage": "Die Lampen kannst du alle ausschalten, da es draussen hell ist. Die Heizung solltest du nicht ausschalten, da Elektronix kalt hat, und der Backofen benötigst du, um das Brot zu backen.\nWenn du die Lampen einen Monat lang nicht brauchst, kannst du 1 Tag länger Fernsehen.",
+    "imagePath": "img/Elektronix/Level_4.png",
+    "imagePathWeather": "img/Winter_Tag.png"
+  },
+  "question 5": {
+    "difficulty": "MEDIUM",
+    "question": "Du und Elektronix habt euch beim Essen bekleckert und eure Kleider gewaschen. Nun müssen sie noch getrocknet werden.",
+
+    "activeAtStart": [
+      "Aquarium",
+      "Kuehlschrank",
+      "Herd/Backofen",
+      "LampeBadezimmer",
+      "Waschmaschine/Tumbler"
+    ],
+    "answer": [
+      "Aquarium",
+      "Kuehlschrank"
+    ],
+    "winMessage": "Richtig! Um möglich viel Energie zu sparen, solltet ihr eure Kleidung lufttrocknen und nicht den Tumbler verwenden.\nMit der gesparten Energie kannst du im Monat 6 Tage länger deinen Computer benutzen.",
+    "failMessage": "Den Backofen benötigst du nach dem Backen nicht mehr. Die Lampe im Badezimmer kannst du am Tag auch ausschalten und deine Wäsche trocknest du am besten an der Luft. Dadurch hättest du genug Energie gespart um im Monat deinen Computer 6 Tage länger zu benutzen.",
+    "imagePath": "img/Elektronix/Level_5.png",
+    "imagePathWeather": "img/Winter_Tag.png"
+  },
+  "question 6": {
+    "difficulty": "MEDIUM",
+    "question": "Nach dem Waschen habt ihr noch eine Runde auf dem Computer gespielt. Jetzt seid ihr müde und möchtet schlafen gehen. ",
+    "activeAtStart": [
+      "Aquarium",
+      "Kuehlschrank",
+      "LampeWohnzimmer",
+      "LampeKüche",
+      "LampeSchlafzimmer",
+      "Computer",
+      "Heizung",
+      "NachttischLampe",
+      "LampeBadezimmer"
+    ],
+    "answer": [
+      "Aquarium",
+      "Kuehlschrank",
+      "Heizung"
+    ],
+    "winMessage": "Richtig! Da du aufhörst zu spielen, kannst du dein Computer und die Lichter ausschalten. Das Aquarium darf wiederum nicht ausgeschaltet werden. \nWenn du diese Gegenstände einen Monat lang nicht brauchst, kannst du 160 Tage länger dein Smartphone laden.",
+    "failMessage": "Für die Nacht kannst du alle Lichter ausschalten und den Computer ebenfalls. Wenn du diese Gegenstände einen Monat lang nicht brauchst, kannst du 160 Tage länger dein Smartphone laden.",
+    "imagePath": "img/Elektronix/Level_6.png",
+    "imagePathWeather": "img/Winter_Nacht.png"
+
+  },
+  "question 7": {
+    "difficulty": "HARD",
+    "question": "Es kommt ein heftiges Gewitter. Dein Haus hat keinen Blitzableiter. Was solltest du schnell in dieser Situation machen?\n",
+    "activeAtStart": [
+      "Aquarium",
+      "Kuehlschrank",
+      "Computer",
+      "LampeWohnzimmer",
+      "LampeKueche",
+      "LampeSchlafzimmer",
+      "Heizung",
+      "NachttischLampe"
+    ],
+    "answer": [
+
+    ],
+    "winMessage": "Richtig! Bei einem Blitzeinschlag können Elektrogeräte kaputtgehen. Keine Angst, heute haben praktisch alle Häuser einen Blitzableiter.",
+    "failMessage": "Leider hast du es nicht geschafft. Elektronische Geräte und Blitzeinschläge sind nicht die besten Freunde. Bei einem Blitzeinschlag können Elektrogeräte kaputtgehen. Keine Angst, heute haben praktisch alle Häuser einen Blitzableiter.",
+    "imagePath": "img/Elektronix/Level_8_Spielabbruch.png",
+    "imagePathWeather": "img/Sommer_Gewitter.png"
+  },
+  "question 8": {
+    "difficulty": "HARD",
+    "question": "Einige deiner Geräte sind etwas älter und haben eine niedrige Energieklasse. Welche Geräte lohnen sich am zu ersetzen? Schalte die alten Geräte aus.",
+    "activeAtStart": [
+      "LampeWohnzimmer",
+      "Fernseher/Spielkonsole",
+      "Aquarium",
+      "LampeKueche",
+      "Herd/Backofen",
+      "Kuehlschrank",
+      "LampeSchlafzimmer",
+      "Computer",
+      "Heizung",
+      "NachttischLampe",
+      "LampeBadezimmer",
+      "Waschmaschine/Tumbler"
+    ],
+    "answer": [
+      "LampeWohnzimmer",
+      "Aquarium",
+      "LampeKueche",
+      "Herd/Backofen",
+      "LampeSchlafzimmer",
+      "NachttischLampe",
+      "LampeBadezimmer",
+      "Waschmaschine/Tumbler"
+
+    ],
+    "winMessage": "Richtig! Du hast die richtigen Geräte ersetzt. Es lohnen sich vor allem Elektrogeräte zu ersetzen, die täglich verwendet werden. ",
+    "failMessage": "Leider hast du nicht alle gewünschten Geräte ersetzt. Eins der folgenden Geräte hast du wohl vergessen. \n Fernseher, Kühlschrank, Heizung, Computer",
+    "imagePath": "img/Elektronix/Level_4.png",
+    "imagePathWeather": "img/Sommer_Nacht.png"
+
+  }
+}

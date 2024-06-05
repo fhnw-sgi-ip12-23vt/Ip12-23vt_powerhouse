@@ -1,0 +1,62 @@
+[[section-solution-strategy]]
+== Lösungsstrategie
+
+[role="arc42help"]
+****
+.Inhalt
+Kurzer Überblick über die grundlegenden Entscheidungen und Lösungsansätze, die Entwurf und Implementierung des Systems prägen.
+Hierzu gehören:
+
+* Technologieentscheidungen
+* Entscheidungen über die Top-Level-Zerlegung des Systems, beispielsweise die Verwendung gesamthaft prägender Entwurfs- oder Architekturmuster,
+* Entscheidungen zur Erreichung der wichtigsten Qualitätsanforderungen sowie
+* relevante organisatorische Entscheidungen, beispielsweise für bestimmte Entwicklungsprozesse oder Delegation bestimmter Aufgaben an andere Stakeholder.
+
+.Motivation
+Diese wichtigen Entscheidungen bilden wesentliche „Eckpfeiler“ der Architektur.
+Von ihnen hängen viele weitere Entscheidungen oder Implementierungsregeln ab.
+
+.Form
+Fassen Sie die zentralen Entwurfsentscheidungen *kurz* zusammen.
+Motivieren Sie, ausgehend von Aufgabenstellung, Qualitätszielen und Randbedingungen, was Sie entschieden haben und warum Sie so entschieden haben.
+Vermeiden Sie redundante Beschreibungen und verweisen Sie eher auf weitere Ausführungen in Folgeabschnitten.
+
+.Weiterführende Informationen
+
+Siehe https://docs.arc42.org/section-4/[Lösungsstrategie] in der online-Dokumentation (auf Englisch!).
+
+****
+
+[cols="1,1" options="header"]
+|===
+|Qualitätsziel |Ansätze in der Architektur
+| Effizienz | Keine Datenbank, keine Wiederholungen
+| Zuverlässigkeit | MVC-Modell
+| Änderbarkeit | Konfiguration mittels .ini File
+
+|===
+
+=== Aufbau
+
+Powerhouse ist ein Java-Programm und nach dem MVC-Modell aufgebaut. Es ist unterteilt in:
+
+* Model Klassen -> Speichern Zustände.
+* View Klassen -> Darstellung der Zustände, überwacht Zustände von Model Klassen.
+* Controller Klassen -> Logik und Kommunikation mit dem Modell.
+* Starter Klasse -> Startet das Programm.
+
+Diese Abstrahierung macht das System übersichtlich und erlaubt verschiedene Ansätze für den Input und die Darstellung von Daten.
+
+=== JavaFX
+Im System wird JavaFX für alle GUI Elemente verwendet.
+
+JavaFX ist weit verbreitet und ist gut dokumentiert. Zusätzlich ist die Implementierung von verschiedenen Scenes mittels JavaFX sehr nützlich.
+
+=== Keine Datenbank für die Levels
+Als Team haben wir uns entschieden keine externe Datenbank für die Aufgaben und Levels zu nutzten.
+
+Gründe:
+
+* Eine Datenbank würde die Performance vom Raspberry Pi einschränken.
+* Die Levels kommen immer in der gleichen Reihenfolge und erfordern keine komplexen Abfragen.
+* Würde System unnötig komplexer machen.

@@ -1,0 +1,42 @@
+= Systemidee
+Gruppe 2: Energieeffizienz
+:toc:
+
+== Kernaufgabe des Systems
+Die Kernaufgabe des Systems ist die Darstellung von Energieeffizienz im Alltag. Das System ist verantwortlich für ein flüssiges und stabiles Spielerlebnis.
+
+Wichtige Begriffe beziehen sich auf das Projekt, was muss jemand wissen um das Projekt zu verstehen.
+
+- *Energieeffizienz*: Im System bezieht sich Energieeffizienz auf das Sparen von Energie
+
+== Kategorie von System
+Das System ist ein eingebettetes System mit Echtzeitanforderungen. Das System arbeitet eng mit einem Raspberry Pi zusammen. Die Echtzeitanforderungen beziehen sich auf eine schnelle Aufnahme von User Inputs.
+
+== Wesentliche Qualitätsanforderungen
+* *Änderbarkeit*:
+** Das Spiel soll über eine Datei konfigurierbar sein, damit es schnell angepasst werden kann
+* *Effizienz*:
+** Das Spiel soll eine schnelle Antwortzeit haben
+* *Übertragbarkeit*:
+** Das Spiel soll ohne Internet verwendbar sein
+** Das Spiel soll gut transportierbar sein
+** Das System soll mit einem Autostart ausgestattet sein
+* *Zuverlässigkeit*:
+** Das Spiel wird von bis zu 20'000 Besucher*innen benutzt
+* *Funktionalität*:
+** Erfüllen der festgelegten Features
+* *Benutzbarkeit*:
+** Das Spiel soll selbsterklärend oder in 30 Sekunden erklärbar sein
+** Das Spiel soll für Jugendliche ansprechend gestaltet sein
+
+== Relevante Stakeholder
+- Primeo Energie: Betreiber und Administrator des Systems
+- FHNW
+- Yves Simmen: Auftraggeber
+- Fachcoaches
+- Projekt Team
+- Benutzer*innen: Besucher des Energiekosmoses
+- Lehrpersonen
+
+== Schnittstellen zu externen Systemen
+- Keine

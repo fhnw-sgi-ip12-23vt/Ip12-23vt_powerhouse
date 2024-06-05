@@ -1,0 +1,13 @@
+NAME;LED;I2CDEVICEADDRESS;BUTTON
+LampeSchlafzimmer;E1;32;D4
+Waschmaschine/Tumbler;E2;32;D17
+NachttischLampe;E3;32;D6
+Heizung;E4;32;D11
+LampeBadezimmer;E5;32;D16
+Computer;E6;32;D5
+LampeWohnzimmer;E6;34;D20
+Herd/Backofen;E2;34;D21
+LampeKueche;E1;34;D22
+Aquarium;E4;34;D23
+Kuehlschrank;E5;34;D24
+Fernseher/Spielkonsole;E3;34;D25

@@ -1,0 +1,46 @@
+
+
+.root {
+    -fx-background-color: linear-gradient(to bottom, #fdf0c0, #dff5f7);  ;
+    -fx-background-repeat: stretch;
+    -fx-background-size: stretch;
+    -fx-background-position: center center;
+    -fx-font-size: 30;
+    -fx-font-family: Electrolize;
+}
+#start {
+    -fx-background-image: url("img/Hintergrund.png");
+}
+
+#logo {
+    -fx-image: url("img/Powerhouse_2.png");
+}
+
+#elektronixStart {
+    -fx-image: url("img/Elektronix/Ende.png");
+}
+
+#elektronixIntro {
+    -fx-image: url("img/Elektronix/Szenario.png");
+}
+#title {
+    -fx-font-size: 85;
+    -fx-text-fill: #004013;
+}
+#result-correct{
+    -fx-background-color: #a6de94;
+}
+
+#result-incorrect{
+    -fx-background-color: #ea8385;
+
+}
+
+#weather {
+    -fx-image: url("img/Sommer_Tag.png");
+}
+
+#electronix {
+    -fx-image: url("img/Richtig.png");
+}
+

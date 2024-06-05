@@ -1,0 +1,86 @@
+image::images/pi4j-header.png[]
+
+_Hier stehen die Informationen zur Hardware._
+
+Informationen zum Erstellen und Zusammenbauen finden sie hier: https://www.cs.technik.fhnw.ch/confluence20/display/IP1222vt/Material[]
+
+*Teileliste*
+[cols="1,1,1,1,1" options="header"]
+|===
+|Produkt |Beschreibung |Einkaufsort |Kosten in CHF |Lin
+|Puppenhaus |FLISAT Puppenhaus, wurde auf Ricardo ersteigert für den halben Preis |Ikea |Neupreis: 39.95 Ricardo: 19.95 | https://www.ikea.com/ch/en/p/flisat-doll-s-house-wall-shelf-50290785/?&extProvId=5&extPu=14231-gaw&extLi=19645973180&extCr=144204905725-646967983869&keyword=&extSi=&gclid=Cj0KCQjwmvSoBhDOARIsAK6aV7jNImv6fXblVv1cl_UpcKnUJgISzAI6cJ2dv8hgdEuyqsAsxFkhmrwaAjVlEALw_wc
+|Wasserhahn |Wasserhahn, gold matt, war bereits vorhanden| diverse Händler, z.B. Steinplanet| ca. 0.15 |https://spiln.ch/lego/technic/werkzeuge-utensilien/11060/wasserhahn-gold-matt/4599.html?gad_source=1&gclid=CjwKCAiAvoqsBhB9EiwA9XTWGc7GNIao_zIp_M7t5a3uz8qvFQE3_JDjIWlrGdkv-e8eX18cqrM9whoCfS0QAvD_BwE
+|===
+
+
+*Abmessungen 3D-Druck Küche*
+[cols="1,1,1,1,1" options="header"]
+|===
+|Produkt |Höhe z |Breite x|Tiefe y|Farbe
+|Lampe|15,51 mm | 33,82 mm| 33,82 mm| a
+|Herd/Backofen |51,76 mm |45 mm| 29,5 mm| transparent
+|Kühlschrank|102,12 | 45 mm |39,02 mm| transparent
+|Tisch|33 mm | 75 mm| 40 mm| weisse Oberfläche, schwarze Beine
+|Stühle|27,5 mm |25 mm| 50 mm| schwarz
+|Küchenschrank|48 mm | 45 mm| 20 mm| weiss
+|Küchenschranktüre| 44,67 mm | 36,66mm| 4 mm|--
+|Waschbecken|x |y|z| a
+|Dunstabzugshaube| 54 mm| 45 mm| 39,54 mm| schwarz
+|===
+
+*Abmessungen 3D-Druck Wohnzimmer*
+[cols="1,1,1,1,1" options="header"]
+|===
+|Produkt |Höhe z |Breite x|Tiefe y|Farbe
+|Lampe|15,51 mm | 33,82 mm| 33,82 mm| a
+|Fernseher|29,63 mm | 37 mm| 39,21 mm| transparent
+|Aquarium Tisch| 27,84 mm| 75 mm| 27,84 mm| schwarz
+|Aquarium Deckel| 3,8 mm| 75 mm| 27,84 mm| schwarz
+|Aquarium Rahmen| 26,05 mm| 75 mm| 27,84 mm| schwarz
+|Musikanlage|15,32 mm | 45 mm| 30,84 mm| transparent
+|Sofa|45,6 mm | 90 mm| 61 mm| blau
+|Tisch |33 mm | 75 mm| 40 mm| weisse Oberfläche, schwarze Beine
+|Spielkonsole|x |y|z| a
+|Konsole| 27,5 mm | 22,5 mm | 23,75 mm| aussen weiss, innen schwarz
+|===
+
+*Abmessungen 3D-Druck Schlafzimmer*
+[cols="1,1,1,1,1" options="header"]
+|===
+|Produkt |Höhe |Breite |Tiefe|Farbe
+|Lampe|15,51 mm | 33,82 mm| 33,82 mm| --
+|Computer|40,83 mm | 38 mm| 31 mm| transparent
+|Heizung |35 mm | 8 mm| 50 mm| transparent
+|Nachttisch|33 mm |40 mm| 30 mm| weinrot/braun
+|Schreibtisch|35,83 mm |75 mm |50,11 mm| weiss
+|Stuhl|27,5 mm |25 mm| 50 mm| blau
+|Nachttischlampe |31,18 mm | 20 mm| 20 mm| transparent
+|Bett | 60 mm| 70 mm| 120 mm | weiss
+|===
+
+*Abmessungen 3D-Druck Badezimmer*
+[cols="1,1,1,1,1" options="header"]
+|===
+|Produkt |Höhe |Breite |Tiefe|Farbe
+|Lampe|15,51 mm | 33,82 mm| 33,82 mm| a
+|Waschmaschine |45 mm | 45 mm| 48,91 mm| transparent
+|WC| 48,16 mm| 35 mm| 21,1 mm| weiss
+|Waschbecken|55,32 mm |35 mm| 23,38 mm| weiss
+|===
+
+*Abmessungen Plexiglas*
+[cols="1,1,1,1,1" options="header"]
+|===
+|Produkt |Höhe |Breite |Tiefe
+|Aquarium Glas   |x |y |z
+|Dusche | x |y|z
+|Front | x| y| z
+|===
+
+*Abmessungen Holz*
+[cols="1,1,1,1,1" options="header"]
+|===
+|Produkt |Höhe |Breite |Tiefe
+|===
+Zeichnungen auf GitLab für Holz
+
