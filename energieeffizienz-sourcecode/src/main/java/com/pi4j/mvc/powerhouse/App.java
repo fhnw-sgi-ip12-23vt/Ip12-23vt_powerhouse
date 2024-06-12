@@ -47,7 +47,7 @@ public class App extends Application {
         // on desktop, it's convenient to have a very basic emulator
         // for the PUI to test the interaction between GUI and PUI
         startGui(new Start(controller));
-        startPUIEmulator(new PuiEmulator(controller));
+        // startPUIEmulator(new PuiEmulator(controller));
     }
 
 
