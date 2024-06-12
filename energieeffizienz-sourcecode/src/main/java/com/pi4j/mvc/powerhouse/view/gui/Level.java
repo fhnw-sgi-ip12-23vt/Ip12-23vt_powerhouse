@@ -18,7 +18,7 @@ import java.util.List;
 
 public class Level extends BorderPane implements ViewMixin<Model, MainController> {
 
-    private final List<Question> questions = App.getQuestions(); // initialize only questions relevant to level
+    private final List<Question> questions = App.getQuestions();
     private Label currentQuestion;
     private Button nextQuestion;
     private Label status;

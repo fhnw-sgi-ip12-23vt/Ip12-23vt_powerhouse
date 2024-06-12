@@ -34,6 +34,7 @@ public class MainController extends ControllerBase<Model> {
         case INTRO, RESULT -> switchTo(GameScene.LEVEL);
         case LEVEL -> switchTo(GameScene.RESULT);
         case END -> switchTo(GameScene.START);
+        default -> throw new IllegalArgumentException("No game scene provided");
         }
     }
 

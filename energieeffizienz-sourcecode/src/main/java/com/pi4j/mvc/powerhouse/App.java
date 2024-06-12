@@ -27,8 +27,8 @@ public class App extends Application {
     private MainController controller;
     private SimulationObjectPUI pui;
 
-    static List<Question> questions; // need to find a way to delete these
-    static List<SimulationObject> simulationObjects; // need to find a way to delete these
+    static List<Question> questions;
+    static List<SimulationObject> simulationObjects;
 
     @Override
     public void start(Stage stage) throws Exception {
@@ -46,8 +46,8 @@ public class App extends Application {
         pui = new SimulationObjectPUI(controller, Pi4J.newAutoContext());
         // on desktop, it's convenient to have a very basic emulator
         // for the PUI to test the interaction between GUI and PUI
-        startGui(new Start(controller));
         // startPUIEmulator(new PuiEmulator(controller));
+        startGui(new Start(controller));
     }
 
 

@@ -11,7 +11,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 final class IOinit {
-    // TODO ask where this class should be located, maybe util
     private IOinit() {
         throw new UnsupportedOperationException("Instantiation is not supported.");
     }

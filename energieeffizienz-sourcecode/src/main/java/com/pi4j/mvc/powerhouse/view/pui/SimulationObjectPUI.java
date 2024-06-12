@@ -40,7 +40,6 @@ public class SimulationObjectPUI extends PuiBase<Model, MainController> {
         next = new SimpleButton(pi4J, PIN.D26, true, 10000L);
         stop = new SimpleButton(pi4J, PIN.D27, true, 1000L);
         for (SimulationObject o : App.getSimulationObjects()) {
-            //ledMap.put(o, new SimpleLed(pi4J, o.getLedPin()));
             ledMap.put(o, new I2CLed(o.getI2cPin(), createOutput(o.getI2cDeviceAddress()), i2CController));
             buttonMap.put(o, new SimpleButton(pi4J, o.getButtonPin(), true, 1000L));
         }

@@ -23,7 +23,7 @@ public class Intro extends VBox implements ViewMixin<Model, MainController> {
     private Rectangle energieBarometerOutline;
     private Rectangle energieBarometerAmount;
     private ImageView elektronixIntro;
-    private int BarometerHeight = 300;
+    private final int barometerHeight = 300;
     private Button intro;
 
     public Intro(MainController controller) {
@@ -48,7 +48,7 @@ public class Intro extends VBox implements ViewMixin<Model, MainController> {
         borderPane = new BorderPane();
         energieBarometerAmount = new Rectangle(30, 0);
         energieBarometerAmount.setFill(Color.GREEN);
-        energieBarometerOutline = new Rectangle(30, Model.MAX_SCORE * (BarometerHeight / Model.MAX_SCORE));
+        energieBarometerOutline = new Rectangle(30, Model.MAX_SCORE * (barometerHeight / Model.MAX_SCORE));
         energieBarometerOutline.setFill(null);
         energieBarometerOutline.setStroke(Color.BLACK);
         elektronixIntro = new ImageView();

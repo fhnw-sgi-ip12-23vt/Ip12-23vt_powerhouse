@@ -14,13 +14,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 final class QuestionReader {
-    // TODO ask where this class should be located, maybe util
     private QuestionReader() {
         throw new UnsupportedOperationException("Instantiation is not supported.");
     }
 
     public static List<Question> read(InputStream in, List<SimulationObject> simulationObjects) throws IOException {
-        // TODO extract this into multiple methods, very messy atm
         try (InputStreamReader reader = new InputStreamReader(in)) {
             try (BufferedReader buffered = new BufferedReader(reader)) {
                 List<Question> questions = new ArrayList<>();

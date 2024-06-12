@@ -59,17 +59,10 @@ public class Start extends VBox implements ViewMixin<Model, MainController> {
         getChildren().add(logo);
         getChildren().add(elektronixStart);
         getChildren().add(startMessage);
-
-        // getChildren().add(start);
     }
 
     @Override
     public void setupUiToActionBindings(MainController controller) {
         start.setOnMouseClicked(event -> controller.nextScene());
     }
-
-    @Override
-    public void setupModelToUiBindings(Model model) {
-    }
-
 }

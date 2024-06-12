@@ -33,7 +33,7 @@ public class Result extends BorderPane implements ViewMixin<Model, MainControlle
     private Button testAnim;
     private Button testDown;
 
-    private static final int BAROMETER_HEIGHT = 300; // Height of the "Energiebarometers"
+    private static final int BAROMETER_HEIGHT = 300;
 
 
     public Result(MainController controller) {
@@ -121,12 +121,12 @@ public class Result extends BorderPane implements ViewMixin<Model, MainControlle
     @Override
     public void setupModelToUiBindings(Model model) {
         onChangeOf(model.questionStatus)
-                .execute((oldValue, newValue) -> {
-                    iamgeCorrect.setVisible(newValue);  // Show "imageCorrect" if true
-                    imageFalse.setVisible(!newValue);  // Show "imageFalse" if false
-                });
+            .execute((oldValue, newValue) -> {
+                iamgeCorrect.setVisible(newValue);
+                imageFalse.setVisible(!newValue);
+            });
 
-       onChangeOf(model.questionStatus)
+        onChangeOf(model.questionStatus)
             .execute((oldValue, newValue) -> {
                 if (newValue) {
                     this.setId("result-correct");
@@ -152,17 +152,17 @@ public class Result extends BorderPane implements ViewMixin<Model, MainControlle
         int newHeight = amount * (BAROMETER_HEIGHT / Model.MAX_SCORE);
         if (newHeight >= 0) {
             if (newHeight < energieBarometerAmount.getHeight()) {
-                // reverse
+                // plays animation in reverse
                 energieBarometerAmount.setFill(Color.RED);
                 Timeline timeline = new Timeline(new KeyFrame(
-                        Duration.ZERO,
-                        new KeyValue(energieBarometerAmount.heightProperty(), energieBarometerAmount.getHeight())
+                    Duration.ZERO,
+                    new KeyValue(energieBarometerAmount.heightProperty(), energieBarometerAmount.getHeight())
                 ), new KeyFrame(Duration.seconds(2), new KeyValue(energieBarometerAmount.heightProperty(), newHeight)));
                 timeline.play();
             } else {
                 energieBarometerAmount.setFill(Color.GREEN);
                 Timeline timeline = new Timeline(new KeyFrame(
-                        Duration.ZERO, new KeyValue(energieBarometerAmount.heightProperty(), 0)
+                    Duration.ZERO, new KeyValue(energieBarometerAmount.heightProperty(), 0)
                 ), new KeyFrame(Duration.seconds(2), new KeyValue(energieBarometerAmount.heightProperty(), newHeight)));
                 timeline.play();
             }
